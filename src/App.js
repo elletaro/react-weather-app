@@ -1,16 +1,28 @@
 
 import './App.css';
+import Weather from "./Weather"
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-        <h1> React Weather</h1>
-         
-      </header>
+      <div className="container">
+        <Weather defaultCity="New York" />
+        <footer>
+          This project was coded by{" "}
+          <a
+            href="https://github.com/elletaro"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Chantelle Dlamini{" "}
+          </a>{" "}
+          and is hosted on{" "}
+          <a href="" target="_blank" rel="noreferrer">
+            Netlify
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
 
-export default App;
